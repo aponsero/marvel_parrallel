@@ -16,13 +16,13 @@ echo "Host `hostname`">>"$LOG"
 
 
 SAMPLE=`head -n +${PBS_ARRAY_INDEX} $SAMPLE_LIST | tail -n 1`
-FILE="${SAMPLE}_contigs.fa"
+FILE="${SAMPLE}_contigs_fixed.fa"
 BAM="${SAMPLE}_contigs.bam"
 
 #run metabat2
 cd $OUT
-DEPTH="$OUT/megahit_10_S11_R1_QC_DEPTH.txt"
-OUT_BIN="$OUT/bin"
+DEPTH="$OUT/${SAMPLE}_DEPTH.txt"
+OUT_BIN="$OUT/${SAMPLE}_bin"
 $METABAT/jgi_summarize_bam_contig_depths --outputDepth $DEPTH $BAM
 $METABAT/metabat2 -i $FILE -a $DEPTH -m 1500 -s 10000 -o $OUT_BIN/bin
 
