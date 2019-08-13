@@ -40,7 +40,7 @@ export STDOUT_DIR="$SCRIPT_DIR/out/$PROG"
 init_dir "$STDERR_DIR" "$STDOUT_DIR"
 
 
-echo "launching $SCRIPT_DIR/run_part1_anvio.sh "
+echo "launching $SCRIPT_DIR/run_marvel.sh "
 
 JOB_ID=`qsub $ARGS -v SAMPLE_LIST,DIR,VIR_DIR,METABAT,STDERR_DIR,STDOUT_DIR,OUT -N run_marvel -e "$STDERR_DIR" -o "$STDOUT_DIR" -J 1-$NUM_FILES $SCRIPT_DIR/run_marvel.sh`
 
