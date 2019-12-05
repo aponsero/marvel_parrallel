@@ -1,10 +1,6 @@
 # marvel_parrallel
 Pipeline for parrallel MARVEL on HPC (PBS scheduler) 
 
-# Clean_centrifuge
-Cleaning pipeline for machine learning application using Centrifuge. This pipeline will run centrifuge on an imput fasta file, then parse the results to remove viral or prokarotic hits from the dataset.
-This script is intended to be run on an HPC with a PBS scheduler.
-
 ## Requirements
 
 ### Marvel
