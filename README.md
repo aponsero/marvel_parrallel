@@ -6,7 +6,7 @@ Pipeline for parrallel MARVEL on HPC (PBS scheduler)
 ### Marvel
 This pipeline requires to download and install [Marvel](https://github.com/LaboratorioBioinformatica/MARVEL) on the HPC. 
 ### Metabat
-This pipeline requires to download and install [Marvel] (https://bitbucket.org/berkeleylab/metabat/src/master/) on the HPC.
+This pipeline requires to download and install [Metabat](https://bitbucket.org/berkeleylab/metabat/src/master/) on the HPC.
 
 ## Quick start
 
